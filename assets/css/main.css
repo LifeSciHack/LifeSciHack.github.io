@@ -1398,10 +1398,16 @@ a.back-to-top:hover, a.back-to-top:focus {
   -o-transform: scale(1, 1);
 }
 
+/* Sponsors */
+
+#judges {
+  background-color: #f3f3f3;
+}
+
 /* Team Item */
 
 #team {
-  background-color: #f3f3f3;
+  background-color: white;
 }
 .team-item:hover {
   box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.35);
@@ -1637,7 +1643,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #contact-map {
-  background: #ffffff;
+  background: #f3f3f3;
 }
 
 #conatiner-map {
