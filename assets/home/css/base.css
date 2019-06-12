@@ -313,6 +313,10 @@ a.demo--current {
 	font-size: 35px !important;
 }
 
+#header_fade {
+	min-width: 1000px;
+}
+
 #header_fade p {
 	display: inline-block;
 	font-weight: 500;
