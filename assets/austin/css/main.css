@@ -7,7 +7,7 @@ body {
   background: #fff;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat-Thin', sans-serif !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
 h1, h2, h3, h4 {
   font-size: 36px;
   font-weight: 700;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat-Thin', sans-serif !important;
 }
 
 a {
@@ -42,7 +42,7 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat-Thin', sans-serif !important;
   margin: 0px;
   font-size: 14px;
 }
@@ -250,6 +250,10 @@ ul li, ol li {
 .btn-rm {
   padding: 7px 10px;
   text-transform: capitalize;
+}
+
+#main-navbar {
+  margin-top: -90px;
 }
 
 button:focus {

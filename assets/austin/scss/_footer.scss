@@ -30,7 +30,7 @@
 	.footer-social{
 		li{
 			display: inline-block;
-			a{	
+			a{
 				color: #000;
 				background: #fff;
 				width: 35px;
@@ -118,6 +118,7 @@
 				color: #fff;
 				&:hover{
 					color: $preset;
+					cursor: pointer;
 				}
 			}
 		}
