@@ -10,7 +10,6 @@
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
-
     <!-- Css -->
     <link rel="stylesheet" href="assets/london/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/london/css/magnific-popup.css" />
@@ -615,27 +614,36 @@
                                 <i class="icon icon-Mail"></i>
                             </div>
                             <h6>E-mail</h6>
-                            <a href="mailto:enigmasupport@gmail.com">lifescihack@gmail.com</a>
+                            <a href="mailto:lifescihack@gmail.com">lifescihack@gmail.com</a>
                         </div> <!-- end email -->
 
                     </div>
 
                     <div class="col-md-8">
-                        <form id="contact-form" action="contact.php">
-
-                            <div class="row contact-row">
-                                <div class="col-md-6 contact-name">
-                                    <input name="name" id="name" type="text" placeholder="Name*">
+                        <form role="form" name="contact-form" id='contact-form' data-toggle="validator" action="https://formspree.io/lifescihack@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 form-line">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control contact-name" id="name" name="name" placeholder="First Name" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 contact-email">
-                                    <input name="mail" id="mail" type="email" placeholder="E-mail*">
+                                <div class="col-md-6 form-line">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control contact-email" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="4" id="comment" name="message" required data-error="Write your message"></textarea>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-color btn-submit" id="form-submit" value="Send"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp; Submit</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <input name="subject" id="subject" type="text" placeholder="Subject">
-                            <textarea name="comment" id="comment" placeholder="Message"></textarea>
-                            <input type="submit" class="btn btn-lg btn-color btn-submit" value="Send Message" id="submit-message">
-                            <div id="msg" class="message"></div>
                         </form>
                     </div> <!-- end col -->
 
