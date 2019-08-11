@@ -473,6 +473,7 @@ img {
     04. Banner CSS Start
 ----------------------------------*/
 .main-banner {
+    background: url("../images/bg/human-heart-radiology-exam-AQ26D78_000.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
