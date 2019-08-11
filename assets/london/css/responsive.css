@@ -2,6 +2,9 @@
 	.banner-wrapper {
 		margin-top: 100px !important;
 	}
+	#first-card-challenges {
+		margin-left: -130px;
+	}
 }
 
 @media only screen and (max-width:768px) {
@@ -16,6 +19,9 @@
 	}
 	.venue-col .info-box p:last-child {
 		margin-top: 0;
+	}
+	#first-card-challenges {
+		margin-left: -30px;
 	}
 }
 
