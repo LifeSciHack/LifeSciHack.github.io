@@ -42,7 +42,7 @@
       animationDuration: 200
     });
 
-    // Parallax 
+    // Parallax
     $('.parallax').jarallax({
         // parallax effect speed. 0.0 - 1.0
         speed: 0.5
@@ -128,7 +128,7 @@
         })
     }
 
-    
+
 
     // ----------- Ajax Contact script -----------//
     $(function() {

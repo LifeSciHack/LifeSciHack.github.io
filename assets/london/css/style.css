@@ -70,6 +70,11 @@ body {
     position: relative;
 }
 /* Common CSS */
+
+video.loading {
+    background: black url('assets/london/images/76m9k-ycnn1-001.jpg') center center no-repeat;
+}
+
 h1,
 h2,
 h3,
@@ -1117,6 +1122,27 @@ img {
     position: relative;
 }
 .counter-area:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg/pattern.png);
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.counter2-area {
+    padding: 70px 0 50px;
+    background: url(../images/organic-cell-background-PPC6GEY.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.counter2-area:before {
     content: "";
     position: absolute;
     left: 0;
