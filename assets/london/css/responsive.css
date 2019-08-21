@@ -3,11 +3,14 @@
 		margin-top: 100px !important;
 	}
 	#first-card-challenges {
-		margin-left: -130px;
+		margin-left: -130px !important;
 	}
 }
 
 @media only screen and (max-width:768px) {
+	#first-card-challenges {
+		margin-left: -200px !important;
+	}
 }
 
 @media only screen and (max-width:1199px) {
@@ -21,7 +24,7 @@
 		margin-top: 0;
 	}
 	#first-card-challenges {
-		margin-left: -30px;
+		margin-left: -200px !important;
 	}
 }
 
