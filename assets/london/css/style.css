@@ -703,6 +703,14 @@ img {
 /*--------------------------------
     05. About CSS Start
 ----------------------------------*/
+.icon a .img-challenge {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.icon a .img-challenge:hover {
+    opacity: .5;
+}
 
 .gallery ul li {
     float: left;
