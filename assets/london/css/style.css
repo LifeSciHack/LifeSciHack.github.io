@@ -135,6 +135,131 @@ img {
     margin-left:30px;
 }
 
+@media only screen and (max-width: 576px) {
+    .main-banner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 576px !important;
+        max-height: 576px !important;
+    }
+
+    #main-logo {
+        height: 150px;
+        width: 140px;
+        margin-top: -100px;
+    }
+
+
+    .header-banner h4 {
+        font-size: 10px !important;
+    }
+
+    #btn-wrapper-main {
+        display: grid !important;
+    }
+
+    .banner-btn {
+        min-width: 30px !important;
+        max-width: 120px !important;
+        padding: 6px 6px 6px 6px !important;
+    }
+
+    .banner-btn a{
+        font-size: 10px !important;
+    }
+
+    #experimental-civics-logo {
+        width: 200px;
+        height: 300px;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .main-banner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 768px !important;
+        max-height: 768px !important;
+    }
+    #main-logo {
+        height: 150px;
+        width: 140px;
+        margin-top: -100px;
+    }
+    .header-banner h4 {
+        font-size: 10px !important;
+    }
+
+    #btn-wrapper-main {
+        display: grid !important;
+    }
+
+    .banner-btn {
+        min-width: 30px !important;
+        max-width: 120px !important;
+        padding: 6px 6px 6px 6px !important;
+    }
+
+    .banner-btn a{
+        font-size: 10px !important;
+    }
+    #experimental-civics-logo {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-banner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: 1200px !important;
+        max-height: 1200px !important;
+    }
+
+    #main-logo {
+        height: 150px;
+        width: 140px;
+        margin-top: -100px;
+    }
+    .header-banner h4 {
+        font-size: 10px !important;
+    }
+
+    #btn-wrapper-main {
+        display: grid !important;
+    }
+
+    .banner-btn {
+        min-width: 30px !important;
+        max-width: 120px !important;
+        padding: 6px 6px 6px 6px !important;
+    }
+
+    .banner-btn a {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .main-banner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    #main-logo {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
 @media (min-width: 576px) {
     .w-sm-20 {
         -webkit-box-flex: 0;
@@ -306,8 +431,7 @@ img {
     transform: rotate(-45deg);
 }
 
-
-/* BUtton CSS */
+/* Button CSS */
 
 .my-btn.btn-color{
     border: none;
@@ -970,7 +1094,7 @@ header p {
     padding: 90px 0 60px;
     position: relative;
     background: #f4f4f4;
-    background: url(../images/bg/human-pathogenic-virus-and-bacterias-under-PXSCE7K.jpg);
+    background: url(../images/bg/human-pathogenic-virus-and-bacterias-under-PXSCE7K-compressor.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1144,12 +1268,13 @@ header p {
 }
 
 
+
 /*--------------------------------
     08. Ticket CSS Start
 ----------------------------------*/
 .ticket-area {
     padding: 150px 0 100px;
-    background: url(../images/bg/human-pathogenic-virus-and-bacterias-under-PXSCE7K.jpg);
+    background: url(../images/bg/human-pathogenic-virus-and-bacterias-under-PXSCE7K-compressor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -44,18 +44,18 @@
 </div>
 
 <!-- Banner Start -->
-<section class="main-banner" style="position: relative; height: 100%">
+<section class="main-banner" style="">
     <div id="particles-js" style="position: absolute; z-index: 1; top: 0; left: 0;" class="banner-wrapper">
         <div class="container">
             <div class="row h-100">
                 <div class="col-md-12">
                     <div class="header-banner header-banner-content jumbotron" style="background: none; z-index: 1;">
-                        <img class="main-logo" src="assets/austin/img/LifeSciHackLogo_White.png" alt="">
+                        <img class="main-logo" src="assets/austin/img/LifeSciHackLogo_White.png" alt="" style="max-height: 500px; max-width: 400px" id="main-logo">
                         <h4 style="font-size: 26px">October, 22, 2019</h4>
                         <h4 style="font-size: 26px">8 John Adam St, London WC2N 6EZ, UK</h4>
-                        <div style="display: inline-flex; justify-content: center; align-items: center" class="col-md-12">
-                            <button class="btn btn-default my-btn btn-color text-center banner-btn"><a href="assets/london/images/sponsor_information/sponsor_deck.pdf">Sponsor Us</a></button>
-                            <button class="btn btn-default my-btn btn-color text-center banner-btn"><a href="https://ti.to/experimental-civics/life-sci-hack?fbclid=IwAR2M7agHDvR2FrVfy8MZKjUnf8-Oh23pdcqJXwiSTWmUIlqaEsu5OWQWUZs" target="_blank" >Tickets</a></button>
+                        <div style="display: inline-flex; justify-content: center; align-items: center" class="col-md-12" id="btn-wrapper-main">
+                            <button class="btn btn-default my-btn btn-color text-center banner-btn" id="btn-tickets"><a href="https://ti.to/experimental-civics/life-sci-hack?fbclid=IwAR2M7agHDvR2FrVfy8MZKjUnf8-Oh23pdcqJXwiSTWmUIlqaEsu5OWQWUZs" target="_blank" >Tickets</a></button>
+                            <button class="btn btn-default my-btn btn-color text-center banner-btn" id="btn-sponsor-us"><a href="assets/london/images/sponsor_information/sponsor_deck.pdf"  target="_blank">Sponsor Us</a></button>
                         </div>
                         <a href="#about" class="page-scroll"><i class="fa fa-angle-down down-arrow"></i></a>
                     </div>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="main-logo" src="assets/london/images/blog/lifescihack.jpeg" alt="">
+                <img class="main-logo" src="assets/london/images/blog/lifescihack-compressor.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -210,39 +210,107 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-6 fw-600">
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
                 <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay="0s">
                     <div class="speaker-box">
                         <div class="pic">
-                            <img src="assets/london/images/logo/tvdh.jpg" alt="">
+                            <img src="assets/london/images/speakers/tvdh.jpg" alt="">
                             <ul class="social">
                                 <li><a href="tobias.html">About</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="speaker-info">
-                        <h4>DR. TOBIAS VON DER HAAR</h4>
-                        <span>SPEAKER</span>
+                        <h4>DR. Tobias Von Der Haar</h4>
+                        <span>Speaker <br> University of Kent</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 fw-600">
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 fw-600">
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
                 <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
                     <div class="speaker-box">
                         <div class="pic">
-                            <img src="assets/london/images/logo/charlotte.capitanchik.jpg" alt="" style="  object-fit: cover;">
+                            <img src="assets/london/images/speakers/charlotte.capitanchik-compressor.jpg" alt="" style="  object-fit: cover;">
                             <ul class="social">
                                 <li><a href="charlotte.html">About</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="speaker-info">
-                        <h4>CHARLOTTE CAPITANCHIK</h4>
-                        <span>SPEAKER & JUDGE</span>
+                        <h4>Charlotte Capitanchik</h4>
+                        <span>Speaker & Judge <br> Francis Crick Institute</span>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
+                    <div class="speaker-box">
+                        <div class="pic">
+                            <img src="assets/london/images/speakers/Aylin_Crop.png" alt="" style="  object-fit: cover;">
+                            <ul class="social">
+                                <li><a href="aylin.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h4>Aylin <br> Cakiroglu</h4>
+                        <span>Speaker <br> Benevolent AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
+                    <div class="speaker-box">
+                        <div class="pic">
+                            <img src="assets/london/images/speakers/Melanie_Ryan_bw.jpg" alt="" style="  object-fit: cover;">
+                            <ul class="social">
+                                <li><a href="melanie.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h4>Melanie <br> Ryan</h4>
+                        <span>Speaker <br> Luc Hoffman Institute</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
+                    <div class="speaker-box">
+                        <div class="pic">
+                            <img src="assets/london/images/speakers/fane_mensah.JPG" alt="" style="  object-fit: cover;">
+                            <ul class="social">
+                                <li><a href="fane.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h4>Dr. Fane Mensah</h4>
+                        <span>Speaker & Judge <br> Synthace</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
+                <div class="speaker-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
+                    <div class="speaker-box">
+                        <div class="pic">
+                            <img src="assets/london/images/speakers/stephanie_wright.jpg" alt="" style="  object-fit: cover;">
+                            <ul class="social">
+                                <li><a href="stephanie.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker-info">
+                        <h4>Stephanie Wright</h4>
+                        <span>Speaker & Judge <br> Mozilla</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 fw-600">
             </div>
         </div>
     </div>
@@ -262,7 +330,7 @@
             </div>
             <div class="col-md-6">
                 <div class="organizer-col" style="margin-left: 200px;">
-                    <a href="https://experimentalcivics.io/"><img src="assets/austin/img/slider/ExperimentalCivics_Logo_ImageOnlyRGB.png" alt="" style="height: 300px; width: 400px;"></a>
+                    <a href="https://experimentalcivics.io/"><img src="assets/austin/img/slider/ExperimentalCivics_Logo_ImageOnlyRGB.png" alt="" style="height: 300px; width: 400px;" id="experimental-civics-logo"></a>
                 </div>
                 <div class="col-md-6">
                 </div>
@@ -322,9 +390,21 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <tr class="table-row-bg">
+                        <td>9:00 AM - 9:10 AM</td>
+                        <td>Welcome / Breakfast in Landing Area</td>
+                    </tr>
                     <tr>
-                        <td>9:20 AM - 9:40 AM</td>
-                        <td>Keynote Speaker (TBA)</td>
+                        <td>9:10 AM - 9:20 AM</td>
+                        <td>Speaker 1:  Charlotte (Crick Institute)</td>
+                    </tr>
+                    <tr class="table-row-bg">
+                        <td>9:20 AM - 9:30 AM</td>
+                        <td>Speaker 2: Dr. Tobias</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 AM - 9:40 AM</td>
+                        <td>Speaker 3: Benevolent AI</td>
                     </tr>
                     <tr class="table-row-bg">
                         <td>9:40 AM - 9:50 AM</td>
@@ -389,23 +469,27 @@
                         <td>Lunch / Judging Evaluations </td>
                     </tr>
                     <tr class="table-row-bg">
-                        <td>1:00 PM</td>
+                        <td>4:00 PM</td>
                         <td>Deadline for Project Submissions</td>
                     </tr>
                     <tr>
-                        <td>1:15 PM - 2:15 PM</td>
-                        <td>Presentations of Teams (4 mins - Volunteers) </td>
+                        <td>4:30 PM</td>
+                        <td>Presentations of Teams (4 mins - Volunteers) | Judge Q + A (2 mins) </td>
                     </tr>
                     <tr class="table-row-bg">
-                        <td>2:30 PM - 3:00 PM</td>
+                        <td>5:30 PM</td>
                         <td>Judge Presentations </td>
                     </tr>
                     <tr>
-                        <td>3:00 PM - 3:30 PM</td>
-                        <td> Thank you / Celebration</td>
+                        <td>6:00 PM - 6:10 PM</td>
+                        <td>Dr. Mensah - Get Involved, Open Science Community</td>
                     </tr>
                     <tr class="table-row-bg">
-                        <td>5:30 PM - 4:00 PM</td>
+                        <td>6:10 PM</td>
+                        <td>Thank you / Celebration </td>
+                    </tr>
+                    <tr>
+                        <td>6:10 PM - 8:00 PM</td>
                         <td>Big Social Networking </td>
                     </tr>
                     </tbody>
@@ -469,7 +553,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="venue-col">
-                    <img src="assets/london/images/venue/great_room.jpg" alt="" class="venue-image">
+                    <img src="assets/london/images/venue/great_room-compressor.jpg" alt="" class="venue-image">
                     <div class="venue-room">
                         <button class="btn btn-default my-btn btn-color"><a style="color: #ffffff !important;font-family: sans-serif !important;" href="https://www.thersa.org/hire-rsa-house/rooms/the-great-room" target="_blank">The Great Room</a></button>
                     </div>
@@ -477,7 +561,7 @@
             </div>
             <div class="col-md-6">
                 <div class="venue-col">
-                    <img src="assets/london/images/venue/tavern_room.jpg" alt="" class="venue-image">
+                    <img src="assets/london/images/venue/tavern_room-compressor.jpg" alt="" class="venue-image">
                     <div class="venue-room">
                         <button class="btn btn-default my-btn btn-color"><a style="color: #ffffff !important;font-family: sans-serif !important;" href="https://www.thersa.org/hire-rsa-house/rooms/tavern-room" target="_blank">The Tavern Room</a></button>
                     </div>
@@ -502,7 +586,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 fw-600">
                     <div class="blog-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay="0s">
                         <div class="blog-img">
-                            <img src="assets/london/images/blog/hacker-using-keyboard-typing-phishing-on-the-PS9AYWN.jpg" alt="">
+                            <img src="assets/london/images/blog/hacker-using-keyboard-typing-phishing-on-the-PS9AYWN (1).jpg" alt="">
                             <div class="blog-date">
                                 <h3>Comprehensive Guide</h3>
                             </div>
@@ -518,7 +602,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 fw-600">
                     <div class="blog-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".2s">
                         <div class="blog-img">
-                            <img src="assets/london/images/blog/microphone-in-modern-radio-station-broadcasting-P457XK8.jpg"alt="">
+                            <img src="assets/london/images/blog/microphone-in-modern-radio-station-broadcasting-P457XK8-compressor.jpg"alt="">
                             <div class="blog-date">
                                 <h3>Open Science Podcast</h3>
                             </div>
@@ -533,7 +617,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 fw-600">
                     <div class="blog-col wow fadeInLeft animated" data-wow-duration=".5s" data-wow-delay=".3s">
                         <div class="blog-img">
-                            <img src="assets/london/images/blog/in-office-P2H5EBH.jpg" alt="" style="height: 240px;">
+                            <img src="assets/london/images/blog/in-office-P2H5EBH-compressor.jpg" alt="" style="height: 240px;">
                             <div class="blog-date">
                                 <h3>Mozilla Festival <br/> 2019 </h3>
                             </div>
@@ -577,19 +661,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4" style="margin-top: 85px;">
+            <div class="col-md-6 col-sm-6 col-xs-6" style="margin-top: 85px;">
                 <div class="sponsor-col">
                     <a href="#"><img src="assets/austin/img/support/mozilla-logo-bw-rgb.png" style="width: auto;" alt=""></a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="sponsor-col">
-                    <a href="#"><img src="assets/london/images/logo/Francs%20Crick%20logo.png" style="width: auto;" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-                <div class="sponsor-col" style="margin-top: 85px;">
-                    <a href="#"><img src="assets/london/images/logo/156x118-logo-colourways-blue.png" style="width: auto;" alt=""></a>
+                    <a href="#"><img src="assets/london/images/logo/Screen%20Shot%202019-10-02%20at%206.07.16%20PM.png" style="width: auto; margin-top: 50px;" alt=""></a>
                 </div>
             </div>
         </div>
